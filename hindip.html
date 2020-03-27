@@ -12,9 +12,26 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script type="text/javascript" src="myjs.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Kalam|PT+Sans+Caption|Pacifico&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
+<style type="text/css">
+.parallax {
+  /* The image used */
+  background-image: url("Hindi_Poems/Poem1.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
 
 </head>
 <body>
+
 <div class="w3-top">
   <div class="w3-bar w3-black w3-card">
     <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
@@ -33,7 +50,6 @@
 
 <!-- Sidebar -->
 <br>
-<br>
 <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
   <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
   <a href="#" class="w3-bar-item w3-button w3-black">समाज का न्याय</a>
@@ -42,17 +58,17 @@
 </div>
 
 <!-- Page Content -->
-<div class="w3-teal">
-  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()"><i class="fa fa-bars"></i></button>
+<div class="w3-panel w3-metro-purple">
+  <button class="w3-button w3-panel w3-metro-purple w3-xlarge" onclick="w3_open()"><i class="fa fa-bars"></i></button>
   <div class="w3-container w3-center">
     <h1>समाज का न्याय </h1>
   </div>
 </div>
 
-<img src="img_car.jpg" alt="Car" style="width:100%">
 
-<div class="w3-container w3-center">
-<p>आज भी बैठी हूँ आस लगाए <br>
+
+<div class="w3-container w3-center parallax">
+<p class="w3-text-white"><b>आज भी बैठी हूँ आस लगाए <br>
 की होगी एक दिन न्याय की अन्याय पर जीत<br>
 बरसों से सहती आ रही हूँ इस अन्याय को<br>
 अब नहीं है और धैर्य इसे सहने को<br>
@@ -93,7 +109,7 @@
 गलती तो थी मेरी लड़की होने की <br>
 गलती तो थी मेरी लड़की होने की<br>
 आज भी बैठी हूँ आस लगाए <br>
-की होगी एक दिन न्याय की अन्याय पर जीत |  </p>               
+की होगी एक दिन न्याय की अन्याय पर जीत | </b> </p>               
 
 </div>
 
