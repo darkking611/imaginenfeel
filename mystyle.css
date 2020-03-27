@@ -1,32 +1,13 @@
-/* general CSS, unrelated to parallax or img */
-body {
-  background-image: url("http://aeoneal.com/imagery/blog/oregon-grapes.jpg");
-  color: #222;
-  font-family: 'Source Sans Pro', sans-serif;
-}
+.parallax {
+  /* The image used */
+  background-image: url("Hindi_Poems/Poem1.jpg");
 
-/* Parallax CSS */
-.body background-oregon-grapes {
-  background-image: url("http://aeoneal.com/imagery/blog/oregon-grapes.jpg");
-  background-size: 100%;
-  width:100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
   background-attachment: fixed;
-  margin-left: auto;
-  margin-right: auto;
-}
-@media (max-width: 767px) {
-  .background-oregon-grapes {
-    height: 330px;
-    width: 330px;
-  }
-}
-
-
-/* Image CSS for your SVG */
-img {
-  height: 100%;
-  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
