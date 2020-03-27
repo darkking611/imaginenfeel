@@ -1,18 +1,61 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script type="text/javascript" src="myjs.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Kalam|PT+Sans+Caption|Pacifico&display=swap" rel="stylesheet">
-</head>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <body>
-	<?php require_once('includes/sidenav.php'); ?>
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button w3-right" title="English">ENGLISH<i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-right">
+        <a href="englishp.html" class="w3-bar-item w3-button">POEMS</a>
+        <a href="englisht.html" class="w3-bar-item w3-button">THOUGHTS</a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HINDI POEMS</a>
+  		<a href="hindit.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HINDI THOUGHTS</a>
+  		<a href="about.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT ME</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Sidebar -->
+<br>
+<br>
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+</div>
+
+<!-- Page Content -->
+<div class="w3-teal">
+  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()"><i class="fa fa-bars"></i></button>
+  <div class="w3-container">
+    <h1>My Page</h1>
+  </div>
+</div>
+
+<img src="img_car.jpg" alt="Car" style="width:100%">
+
+<div class="w3-container">
+<p>This sidebar is hidden by default, (style="display:none")</p>
+<p>You must click on the "hamburger" icon (top left) to open it.</p>
+<p>The sidebar will hide a part of the page content.</p>
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+     
 </body>
-</html>
+</html> 
